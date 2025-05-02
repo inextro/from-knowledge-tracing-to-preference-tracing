@@ -1,0 +1,19 @@
+# data configuration
+load_col:
+  inter: [user_id, item_id, label, timestamp]
+LABEL_FIELD: label
+field_separator: ','
+MAX_ITEM_LIST_LENGTH: 200
+
+# training and evaluation configuration
+epochs: 5
+train_batch_size: 64
+eval_batch_size: 64
+eval_args:
+  split: {'RS':[0.8,0.0,0.2]}
+  order: TO
+  group_by: ~
+  mode: labeled
+train_neg_sample_args: ~
+metrics: AUC
+valid_metric: AUC

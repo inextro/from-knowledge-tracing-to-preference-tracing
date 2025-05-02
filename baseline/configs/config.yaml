@@ -1,0 +1,18 @@
+# data configuration
+load_col:
+  inter: [user_id, item_id, label, timestamp]
+LABEL_FIELD: label
+field_separator: ','
+
+# training and evaluation configuration
+epochs: 50
+train_batch_size: 64
+eval_batch_size: 64
+eval_args:
+  split: {'RS':[0.8,0.0,0.2]}
+  order: RO
+  group_by: ~
+  mode: labeled
+train_neg_sample_args: ~
+metrics: AUC
+valid_metric: AUC
