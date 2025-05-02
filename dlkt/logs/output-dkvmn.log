@@ -1,0 +1,13 @@
+model_name is dkvmn
+Read data from processed file: ../data/ml-1m\test_sequences.csv_-1.pkl
+file path: ../data/ml-1m\test_sequences.csv, qlen: 0, clen: 1733, rlen: 1733
+Read data from processed file: ../data/ml-1m\test_window_sequences.csv_-1.pkl
+file path: ../data/ml-1m\test_window_sequences.csv, qlen: 0, clen: 66499, rlen: 66499
+Start predicting model: dkvmn, embtype: qid, save_dir: C:\Users\inno\Documents\jungmin\pykt-toolkit\examples\saved_model\ml-1m_dkvmn_qid_saved_model_42_0_0.2_200_0.001_50_1_1_4f0a3377-31fa-4862-8c8b-5dd857380e86, dataset_name: ml-1m
+model_config: {'dropout': 0.2, 'dim_s': 200, 'size_m': 50}
+data_config: {'dpath': '../data/ml-1m', 'num_q': 0, 'num_c': 3628, 'input_type': ['concepts'], 'max_concepts': 1, 'min_seq_len': 3, 'maxlen': 200, 'emb_path': '', 'train_valid_original_file': 'train_valid.csv', 'train_valid_file': 'train_valid_sequences.csv', 'folds': [0, 1, 2, 3, 4], 'test_original_file': 'test.csv', 'test_file': 'test_sequences.csv', 'test_window_file': 'test_window_sequences.csv', 'dataset_name': 'ml-1m'}
+ts.shape: (198649,), ps.shape: (198649,)
+testauc: 0.781165336369491, testacc: 0.7197821282765078
+ts.shape: (66499,), ps.shape: (66499,)
+testauc: 0.781165336369491, testacc: 0.7197821282765078, window_testauc: 0.8058988926970303, window_testacc: 0.7288981789199838
+{'testauc': 0.781165336369491, 'testacc': 0.7197821282765078, 'window_testauc': 0.8058988926970303, 'window_testacc': 0.7288981789199838}

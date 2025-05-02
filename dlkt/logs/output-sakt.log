@@ -1,0 +1,13 @@
+model_name is sakt
+Read data from processed file: ../data/ml-1m\test_sequences.csv_-1.pkl
+file path: ../data/ml-1m\test_sequences.csv, qlen: 0, clen: 1733, rlen: 1733
+Read data from processed file: ../data/ml-1m\test_window_sequences.csv_-1.pkl
+file path: ../data/ml-1m\test_window_sequences.csv, qlen: 0, clen: 66499, rlen: 66499
+Start predicting model: sakt, embtype: qid, save_dir: C:\Users\inno\Documents\jungmin\pykt-toolkit\examples\saved_model\ml-1m_sakt_qid_saved_model_42_0_0.2_256_0.001_8_1_1_1_081c0797-8f87-4d83-a23f-a15ef4236781, dataset_name: ml-1m
+model_config: {'dropout': 0.2, 'emb_size': 256, 'num_attn_heads': 8, 'num_en': 1, 'seq_len': 200}
+data_config: {'dpath': '../data/ml-1m', 'num_q': 0, 'num_c': 3628, 'input_type': ['concepts'], 'max_concepts': 1, 'min_seq_len': 3, 'maxlen': 200, 'emb_path': '', 'train_valid_original_file': 'train_valid.csv', 'train_valid_file': 'train_valid_sequences.csv', 'folds': [0, 1, 2, 3, 4], 'test_original_file': 'test.csv', 'test_file': 'test_sequences.csv', 'test_window_file': 'test_window_sequences.csv', 'dataset_name': 'ml-1m'}
+ts.shape: (198649,), ps.shape: (198649,)
+testauc: 0.770554146629277, testacc: 0.7109675860437253
+ts.shape: (66499,), ps.shape: (66499,)
+testauc: 0.770554146629277, testacc: 0.7109675860437253, window_testauc: 0.7967935323690966, window_testacc: 0.7212890419404803
+{'testauc': 0.770554146629277, 'testacc': 0.7109675860437253, 'window_testauc': 0.7967935323690966, 'window_testacc': 0.7212890419404803}

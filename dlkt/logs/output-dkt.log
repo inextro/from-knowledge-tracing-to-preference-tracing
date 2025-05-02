@@ -1,0 +1,16 @@
+model_name is dkt
+Read data from processed file: ../data/ml-1m\test_sequences.csv_-1.pkl
+file path: ../data/ml-1m\test_sequences.csv, qlen: 0, clen: 1733, rlen: 1733
+Start preprocessing ../data/ml-1m\test_window_sequences.csv fold: _-1...
+C:\Users\inno\Documents\jungmin\pykt-toolkit\.pykt\Lib\site-packages\pykt\datasets\data_loader.py:152: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ..\torch\csrc\tensor\python_tensor.cpp:85.)
+  dori[key] = LongTensor(dori[key])
+interaction_num: 66499
+file path: ../data/ml-1m\test_window_sequences.csv, qlen: 0, clen: 66499, rlen: 66499
+Start predicting model: dkt, embtype: qid, save_dir: C:\Users\inno\Documents\jungmin\pykt-toolkit\examples\saved_model\ml-1m_dkt_qid_saved_model_42_0_0.2_200_0.001_1_1_ebfbcbd3-22b6-4355-90e5-b1bbcf1b689c, dataset_name: ml-1m
+model_config: {'dropout': 0.2, 'emb_size': 200}
+data_config: {'dpath': '../data/ml-1m', 'num_q': 0, 'num_c': 3628, 'input_type': ['concepts'], 'max_concepts': 1, 'min_seq_len': 3, 'maxlen': 200, 'emb_path': '', 'train_valid_original_file': 'train_valid.csv', 'train_valid_file': 'train_valid_sequences.csv', 'folds': [0, 1, 2, 3, 4], 'test_original_file': 'test.csv', 'test_file': 'test_sequences.csv', 'test_window_file': 'test_window_sequences.csv', 'dataset_name': 'ml-1m'}
+ts.shape: (198649,), ps.shape: (198649,)
+testauc: 0.7770888244100292, testacc: 0.7177584583864002
+ts.shape: (66499,), ps.shape: (66499,)
+testauc: 0.7770888244100292, testacc: 0.7177584583864002, window_testauc: 0.8016265679968034, window_testacc: 0.7262966360396397
+{'testauc': 0.7770888244100292, 'testacc': 0.7177584583864002, 'window_testauc': 0.8016265679968034, 'window_testacc': 0.7262966360396397}
