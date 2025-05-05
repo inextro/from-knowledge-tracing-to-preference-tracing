@@ -8,7 +8,7 @@ dependencies = [
     "bs4>=0.0.2",
     "gensim==4.3.2",
     "lightgbm>=4.6.0",
-    "nltk==3.8.1",
+    "nltk>=3.9.1", 
     "numpy==1.26.4",
     "pandas==2.2.1",
     "pybkt==1.4.1",
