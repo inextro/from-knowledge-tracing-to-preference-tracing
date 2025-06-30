@@ -12,7 +12,7 @@ def main():
     if model_name == 'DIEN':
         config = './configs/config_DIEN.yaml'
     else:
-        config = './configs/configs.yaml'
+        config = './configs/config.yaml'
 
     run_recbole(model=model_name, dataset='ml', config_file_list=[config])
 
